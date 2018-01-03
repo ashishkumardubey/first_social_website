@@ -1,5 +1,5 @@
 <?php 
-	include("includes/header.php");
+	include("C:/xampp/htdocs/social/includes/header.php");
 
 	$message_obj= new Message($con,$userLoggedIn);
 	if(isset($_GET['u']))
@@ -65,7 +65,9 @@
 			 		<?php 
 			 			if($user_to=='new'){
 			 				echo "Select the friend you would ilke to message <br><br>";
-			 				echo "To: <input type='text'> ";
+			 				?>
+			 				To: <input type='text' onkeyup='getUsers(this.value, "<?php echo $userLoggedIn ?>")' name='q' placeholder='Name' autocomplete='off' id='search_text_input'>
+			 				<?php
 			 				echo "<div class='results'></div> ";
 			 			}
 
