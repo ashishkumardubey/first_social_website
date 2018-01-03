@@ -468,3 +468,33 @@ float: right;
     overflow-x: hidden;
 }
 
+
+
+.loaded_conversations{
+	max-height: 180px;
+    overflow: auto;
+}
+
+.loaded_conversations a{
+	text-decoration: none;
+}
+.user_found_messages{
+	border-bottom: 1px solid #dedede;
+    padding: 8px 8px 10px 8px;
+}
+
+.user_found_messages img{
+	height: 35px;
+	float: left;
+}
+
+.timestamp_smaller{
+	font-size: 12px;
+}
+#msg_time{
+	color: #c1bdbd;
+}
+
+#msg_sniplet{
+	color: #757575;
+}
